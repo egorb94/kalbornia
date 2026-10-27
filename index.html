@@ -95,7 +95,7 @@ a{color:inherit}
 .row.flip .txt{grid-column:1 / span 4;grid-row:1}
 .row h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1;margin:0 0 .8rem}
 .row p{margin:0;color:var(--muted);max-width:28em}
-.extras{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);margin-top:clamp(3rem,8vw,6rem)}
+.extras{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line);margin-top:clamp(3rem,8vw,6rem)}
 .extras div{padding:1.6rem 1.5rem 0 0}
 .extras div + div{padding-left:1.5rem;border-left:1px solid var(--line)}
 .extras h4{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:0 0 .4rem}
@@ -242,7 +242,7 @@ body.swap main,body.swap .hero__inner,body.swap footer{opacity:0}
     <div>
       <h2 data-t="dear">Kochani,</h2>
       <p data-t="p1">zapraszamy całą Rodzinę Gorbacewiczów na tydzień nad jeziorem w Kalborni na Mazurach. Od poniedziałku 5 lipca do niedzieli 11 lipca 2027 roku cały dom będzie tylko dla nas.</p>
-      <p data-t="p2">Basen, jacuzzi z widokiem na wodę, sauna, rowery, wieczorne ognisko i schodki prosto nad jezioro. Bez pośpiechu, bez kalendarzy, za to z długimi rozmowami przy wspólnym stole.</p>
+      <p data-t="p2">Basen, jacuzzi z widokiem na wodę, sauna, wieczorne ognisko i schodki prosto nad jezioro. Bez pośpiechu, bez kalendarzy, za to z długimi rozmowami przy wspólnym stole.</p>
       <p class="letter__sign"><span data-t="sign">Bardzo się cieszymy i nie możemy się doczekać!</span>
         <span class="letter__names" data-t="names">Emil, Dominika i Nikodem</span></p>
 
@@ -308,7 +308,7 @@ body.swap main,body.swap .hero__inner,body.swap footer{opacity:0}
 
     <div class="extras">
       <div><h4 data-t="saunaT">Sauna</h4><p data-t="saunaP">Na chłodniejsze wieczory, a potem prosto do basenu.</p></div>
-      <div><h4 data-t="bikeT">Rowery</h4><p data-t="bikeP">Rekreacyjne rowery w domku ogrodnika na wycieczki wokół jeziora.</p></div>
+      
       <div><h4 data-t="terT">Taras do biesiadowania</h4><p data-t="terP">Duży narożnik i stół pod gołym niebem, idealne na wspólne śniadania.</p></div>
     </div>
   </div>
@@ -337,7 +337,7 @@ body.swap main,body.swap .hero__inner,body.swap footer{opacity:0}
     <p class="week__lead" data-t="weekP">Luźny pomysł na każdy dzień. Plan można dowolnie zmieniać, liczy się to, że będziemy razem.</p>
     <ol class="days" id="days">
       <li><span class="dot"></span><span class="dd"><span class="d">5</span><span class="wd" data-t="w1">poniedziałek</span></span><p data-t="d1">Przyjazd od 14:00, rozpakowanie i pierwsza kąpiel w basenie</p></li>
-      <li><span class="dot"></span><span class="dd"><span class="d">6</span><span class="wd" data-t="w2">wtorek</span></span><p data-t="d2">Wycieczka rowerowa wokół jeziora</p></li>
+      <li><span class="dot"></span><span class="dd"><span class="d">6</span><span class="wd" data-t="w2">wtorek</span></span><p data-t="d2">Spacer brzegiem jeziora i poranna kąpiel</p></li>
       <li><span class="dot"></span><span class="dd"><span class="d">7</span><span class="wd" data-t="w3">środa</span></span><p data-t="d3">Sauna po południu, jacuzzi o zachodzie słońca</p></li>
       <li><span class="dot"></span><span class="dd"><span class="d">8</span><span class="wd" data-t="w4">czwartek</span></span><p data-t="d4">Obiad w Karczmie Młyn pod Mariaszkiem, 30 minut od domu</p></li>
       <li><span class="dot"></span><span class="dd"><span class="d">9</span><span class="wd" data-t="w5">piątek</span></span><p data-t="d5">Leniwy dzień na leżakach i nad wodą</p></li>
@@ -362,7 +362,7 @@ body.swap main,body.swap .hero__inner,body.swap footer{opacity:0}
     </div>
     <div class="card">
       <h4 data-t="bringT">Co zabrać</h4>
-      <p data-t="bringP">Stroje kąpielowe i klapki, coś ciepłego na wieczory przy ognisku, wygodne buty na rowery i dużo dobrego humoru.</p>
+      <p data-t="bringP">Stroje kąpielowe i klapki, coś ciepłego na wieczory przy ognisku, wygodne buty na spacery i dużo dobrego humoru.</p>
     </div>
     <div class="card rules">
       <h4 data-t="rulesT">Dobrze wiedzieć</h4>
@@ -404,7 +404,7 @@ const EN = {
   cue: 'scroll down',
   dear: 'Dear all,',
   p1: 'We’d love to invite the whole Gorbacewicz family to spend a week by the lake in Kalbornia, in Poland’s Masurian Lake District. From Monday 5 July to Sunday 11 July 2027, the entire house will be ours alone.',
-  p2: 'A pool, a hot tub overlooking the water, a sauna, bikes, evening bonfires and steps leading straight down to the lake. No rushing, no diaries, just long conversations around the family table.',
+  p2: 'A pool, a hot tub overlooking the water, a sauna, evening bonfires and steps leading straight down to the lake. No rushing, no diaries, just long conversations around the family table.',
   sign: 'We’re so excited and can’t wait to see you!',
   names: 'Emil, Dominika and Nikodem',
   cdLead: 'Time until we arrive', cdD: 'days', cdH: 'hours', cdM: 'minutes', cdS: 'seconds', cdDone: 'We’re in Kalbornia!',
@@ -421,7 +421,7 @@ const EN = {
   lakeAlt: 'Steps from the garden leading down to the lake through the reeds', lakeT: 'Our own way down to the lake',
   lakeP: 'Steps from the garden wind through the reeds straight to the shore. Perfect for a morning stroll or watching the sunset.',
   saunaT: 'Sauna', saunaP: 'For cooler evenings, followed by a plunge in the pool.',
-  bikeT: 'Bikes', bikeP: 'Leisure bikes in the garden shed for rides around the lake.',
+  
   terT: 'Patio for get-togethers', terP: 'A big corner sofa and a table outdoors, perfect for breakfasts together.',
   galT: 'Take a look inside', galP: 'Wooden ceilings, plenty of light and comfy bedrooms. Tap any photo to enlarge it.',
   g1: 'Living room', g2: 'Kitchen and dining', g3: 'Bedroom', g4: 'Bathroom', g5: 'Hallway', g6: 'Second bedroom', g7: 'Patio', g8: 'The house from the garden',
@@ -429,7 +429,7 @@ const EN = {
   weekT: 'Our week by the lake', weekP: 'A loose idea for each day. Plans can change; what matters is that we’ll be together.',
   w1: 'Monday', w2: 'Tuesday', w3: 'Wednesday', w4: 'Thursday', w5: 'Friday', w6: 'Saturday', w7: 'Sunday',
   d1: 'Arrive from 2 pm, unpack and take a first dip in the pool',
-  d2: 'Bike ride around the lake',
+  d2: 'A stroll along the lakeshore and a morning swim',
   d3: 'Sauna in the afternoon, hot tub at sunset',
   d4: 'Lunch at Karczma Młyn pod Mariaszkiem, 30 minutes from the house',
   d5: 'A lazy day on the loungers and by the water',
@@ -438,7 +438,7 @@ const EN = {
   infoAria: 'Practical information',
   whereT: 'Where', where1: '<strong>Kalbornia 60</strong>, Masuria, Poland', where2: 'Sat nav takes you right to the door.', mapBtn: 'Open in Google Maps',
   whenT: 'When', when1: '<strong>Arrival:</strong> Monday 5 July, from 2 pm', when2: '<strong>Departure:</strong> Sunday 11 July, by 12 noon',
-  bringT: 'What to bring', bringP: 'Swimwear and flip-flops, something warm for evenings by the fire, comfy shoes for cycling and plenty of good cheer.',
+  bringT: 'What to bring', bringP: 'Swimwear and flip-flops, something warm for evenings by the fire, comfy shoes for walks and plenty of good cheer.',
   rulesT: 'Good to know', rules1: 'Smoking isn’t allowed in the house, and please don’t bring pets.', rules2: 'The bar in the kitchen island has a lovely tradition: if you can, leave a bottle of wine for the next guests.',
   finT: 'See you by the&nbsp;lake!', finP: 'Unforgettable moments, relaxation and Masurian nature await us.<br>Emil, Dominika and Nikodem',
   foot: 'Kalbornia, 5–11 July 2027',
